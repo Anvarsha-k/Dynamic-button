@@ -1,0 +1,57 @@
+.output-page {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button-container {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dynamic-button {
+    min-width: 200px;
+    min-height: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 30px;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .output-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .output-item {
+    width: 100%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    animation: fadeIn 0.5s;
+  }
+  
+  .output-item p {
+    word-break: break-word;
+  }
+  
+  .output-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

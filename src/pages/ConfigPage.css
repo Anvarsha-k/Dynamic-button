@@ -1,0 +1,188 @@
+.config-page {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .config-section, .workflow-section, .preview-section {
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .workflow-section, .preview-section {
+    grid-column: span 2;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 500;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .action-selector {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .action-selector select {
+    flex: 1;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+  }
+  
+  .add-btn {
+    background-color: #2ecc71;
+  }
+  
+  .add-btn:hover {
+    background-color: #27ae60;
+  }
+  
+  .remove-btn {
+    background-color: #e74c3c;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .action-list {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .action-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .action-grip {
+    margin-right: 15px;
+    color: #95a5a6;
+    cursor: grab;
+  }
+  
+  .action-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .action-name {
+    font-weight: 500;
+  }
+  
+  .action-param {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-top: 3px;
+  }
+  
+  .no-actions {
+    color: #7f8c8d;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .save-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .save-btn {
+    background-color: #3498db;
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+  
+  .save-message {
+    color: #27ae60;
+    font-weight: 500;
+  }
+  
+  .preview-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .preview-button {
+    min-width: 150px;
+  }
+  
+  .action-sequence {
+    width: 100%;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  
+  .preview-action {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  .preview-action:nth-child(odd) {
+    background-color: #ecf0f1;
+  }
+  
